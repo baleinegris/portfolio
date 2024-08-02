@@ -18,15 +18,15 @@ function IntroModel() {
         }
     }, [actions, names]);
 
-    useFrame(() => {
-        whaleRef.current.position.x -= 0.0015;
+    useFrame((clock) => {
+        whaleRef.current.position.x -= 0.002;
     });
 
     return (
         <mesh 
             ref={whaleRef}
             rotation={[-0.5, -0.1, 0.3]}
-            position={[1.6, 0.2, 0]}
+            position={[1.2, 0.2, 0]}
         >
             <primitive object={whaleModel.scene} scale={3} />
         </mesh>
@@ -45,11 +45,6 @@ function IntroCanvas(){
                 <ambientLight intensity={1} />
                 <spotLight position={[10, 10, 0]} angle={0.15} penumbra={1} />
                 <pointLight position={[-10, -10, -10]} />
-                <OrbitControls 
-                    enableZoom={false}/>
-                {/* //     maxPolarAngle={Math.PI/2}
-                //     minPolarAngle={Math.PI/2}/> */}
-                 {/* <gridHelper args={[20, 20, 0xff0000, 'teal']}/> */}
                 <IntroModel/>
             </Suspense>
         </Canvas>

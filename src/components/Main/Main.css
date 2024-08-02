@@ -1,9 +1,8 @@
 .main{
-    /* background-image: url('../../assets/pexels-kubiceknov-924824.jpg');
     background-repeat: no-repeat;
-    background-size: cover; */
+    background-size: cover;
     position: relative;
-    background: radial-gradient(circle at top left, rgba(1,84,123,1) 50%, rgb(32, 46, 63) 100%);
+    /* background: radial-gradient(circle at top left, rgba(1,84,123,1) 50%, rgb(32, 46, 63) 100%); */
 }
 
 .line{
