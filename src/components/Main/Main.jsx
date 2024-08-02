@@ -3,23 +3,27 @@ import './Main.css';
 import IntroCanvas from '../IntroModel/IntroModel';
 import ParticlesComponent from '../particles';
 
-function Main(){
+function Main() {
     return (
-        <div id='main' style={{position: 'relative'}}>
-        <ParticlesComponent id='particles'/>
-        <section className='mt-[200px] w-full h-screen main z-1'>
-            <div className='intro pt-[30px] ml-[5%] flex z-[10]'>
-                <div className='flex flex-col justify-center items-center'>
-                    <div className='rounded-full mt-3 bg-blue-950 w-5 h-5'/>
-                    <div className='w-[5px] h-40 line'/>
+        <div id='main' style={{ position: 'relative' }} className='h-screen'>
+            <ParticlesComponent id='particles' />
+            <section className='mt-[200px] w-full h-full main z-1'>
+                <div className='intro pt-[30px] ml-[5%] flex z-[10]'>
+                    <div className='flex flex-col justify-center items-center'>
+                        <div className='rounded-full mt-3 bg-blue-950 w-5 h-5' />
+                        <div className='w-[5px] h-40 line' />
+                    </div>
+                    <div className='text-[30px] ml-3 mt-3 text-white font-bold  w-[40%]'>
+                        Hi, I'm <span className='text-cyan-400'>Oscar Heath</span> <br />
+                        <span className='text-blue-300 font-normal'>Aspiring Software Developer studying Computer Science at the University of Toronto </span>
+                    </div>
                 </div>
-                <div className='text-[30px] ml-3 mt-3 text-white font-bold  w-[40%]'>
-                    Hi, I'm <span className='text-cyan-400'>Oscar Heath</span> <br/>
-                    <span className='text-blue-300 font-normal'>Aspiring Software Developer studying Computer Science at the University of Toronto </span>
-                </div>
-            </div>
-            <IntroCanvas/>
-        </section>
+                <IntroCanvas />
+                <svg id="separator" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                    <path d="M0 504L21.5 507.8C43 511.7 86 519.3 128.8 521.5C171.7 523.7 214.3 520.3 257.2 518.5C300 516.7 343 516.3 385.8 516.2C428.7 516 471.3 516 514.2 519C557 522 600 528 642.8 529C685.7 530 728.3 526 771.2 523.7C814 521.3 857 520.7 878.5 520.3L900 520L900 601L878.5 601C857 601 814 601 771.2 601C728.3 601 685.7 601 642.8 601C600 601 557 601 514.2 601C471.3 601 428.7 601 385.8 601C343 601 300 601 257.2 601C214.3 601 171.7 601 128.8 601C86 601 43 601 21.5 601L0 601Z" fill="#001146"></path><path d="M0 546L21.5 543.5C43 541 86 536 128.8 535.5C171.7 535 214.3 539 257.2 537.3C300 535.7 343 528.3 385.8 527.8C428.7 527.3 471.3 533.7 514.2 537.5C557 541.3 600 542.7 642.8 540.3C685.7 538 728.3 532 771.2 530.7C814 529.3 857 532.7 878.5 534.3L900 536L900 601L878.5 601C857 601 814 601 771.2 601C728.3 601 685.7 601 642.8 601C600 601 557 601 514.2 601C471.3 601 428.7 601 385.8 601C343 601 300 601 257.2 601C214.3 601 171.7 601 128.8 601C86 601 43 601 21.5 601L0 601Z" fill="#002b63"></path><path d="M0 547L21.5 549.3C43 551.7 86 556.3 128.8 558.3C171.7 560.3 214.3 559.7 257.2 558.2C300 556.7 343 554.3 385.8 550.5C428.7 546.7 471.3 541.3 514.2 539.3C557 537.3 600 538.7 642.8 539.8C685.7 541 728.3 542 771.2 541.8C814 541.7 857 540.3 878.5 539.7L900 539L900 601L878.5 601C857 601 814 601 771.2 601C728.3 601 685.7 601 642.8 601C600 601 557 601 514.2 601C471.3 601 428.7 601 385.8 601C343 601 300 601 257.2 601C214.3 601 171.7 601 128.8 601C86 601 43 601 21.5 601L0 601Z" fill="#004680"></path><path d="M0 570L21.5 569.7C43 569.3 86 568.7 128.8 568.7C171.7 568.7 214.3 569.3 257.2 567.7C300 566 343 562 385.8 561.7C428.7 561.3 471.3 564.7 514.2 566C557 567.3 600 566.7 642.8 568C685.7 569.3 728.3 572.7 771.2 574.3C814 576 857 576 878.5 576L900 576L900 601L878.5 601C857 601 814 601 771.2 601C728.3 601 685.7 601 642.8 601C600 601 557 601 514.2 601C471.3 601 428.7 601 385.8 601C343 601 300 601 257.2 601C214.3 601 171.7 601 128.8 601C86 601 43 601 21.5 601L0 601Z" fill="#04639c"></path><path d="M0 577L21.5 576.8C43 576.7 86 576.3 128.8 576.2C171.7 576 214.3 576 257.2 577.8C300 579.7 343 583.3 385.8 583C428.7 582.7 471.3 578.3 514.2 576.8C557 575.3 600 576.7 642.8 578.7C685.7 580.7 728.3 583.3 771.2 582.8C814 582.3 857 578.7 878.5 576.8L900 575L900 601L878.5 601C857 601 814 601 771.2 601C728.3 601 685.7 601 642.8 601C600 601 557 601 514.2 601C471.3 601 428.7 601 385.8 601C343 601 300 601 257.2 601C214.3 601 171.7 601 128.8 601C86 601 43 601 21.5 601L0 601Z" fill="#1881b6">
+                    </path>
+                </svg>
+            </section>
         </div>
     )
 }
