@@ -43,7 +43,7 @@ function IntroModel() {
 
         // Sinusoidal movement for natural swimming effect
         whaleRef.current.position.x -= 0.004 * whaleDirection;
-        whaleRef.current.position.y = 0.1 * Math.sin(time);
+        whaleRef.current.position.y = 0.1 * Math.sin(time) + time * 0.001;
         whaleRef.current.rotation.z = 0.1 * Math.sin(time);
     });
 
@@ -65,13 +65,15 @@ function IntroCanvas(){
         camera={{position : [10, 2, 10], fov: 25, zoom : 8}}
         g={{preserveDrawingBuffer : true}} 
         className='z-[0] absolute top-0'
-        style={{position: 'absolute', height: '50%'}}>
+        style={{position: 'absolute', height: '60%'}}>
             <Suspense fallback={null}>
                 <ambientLight intensity={1} />
                 <spotLight position={[10, 10, 0]} angle={0.15} penumbra={1} />
                 <pointLight position={[-10, -10, -10]} />
                 <IntroModel/>
-                <OrbitControls/>
+                {/* <OrbitControls/>
+                <axesHelper />
+                <gridHelper/> */}
             </Suspense>
         </Canvas>
     )
