@@ -21,6 +21,38 @@ function Navbar() {
                 <p className="text-white font-bold text-[18px] cursor-pointer">Oscar Heath | Baleinegris</p>
             </Link>
             </div>
+            <div className="w-full flex justify-end items-center">
+                <Link 
+                    to='/projects'
+                    className={`relative text-white font-bold text-[18px] cursor-pointer mx-[10px] navbutton ${active === 'Projects' ? 'active' : ''}`}
+                    onClick={() => {
+                        setActive('Projects');
+                        window.scrollTo(0, 0);
+                    }}
+                >
+                    Projects
+                </Link>
+                <Link 
+                    to='/resume'
+                    className={`relative text-white font-bold text-[18px] cursor-pointer mx-[10px] navbutton ${active === 'Resume' ? 'active' : ''}`}
+                    onClick={() => {
+                        setActive('Resume');
+                        window.scrollTo(0, 0);
+                    }}
+                >
+                    Resume
+                </Link>
+                <Link 
+                    to='/contact'
+                    className={`relative text-white font-bold text-[18px] cursor-pointer mx-[10px] navbutton${active === 'Contact' ? 'active' : ''}`}
+                    onClick={() => {
+                        setActive('Contact');
+                        window.scrollTo(0, 0);
+                    }}
+                >
+                    Contact
+                </Link>
+            </div>
         </nav>
     );
 }

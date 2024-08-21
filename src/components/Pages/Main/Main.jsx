@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import './Main.css';
-import IntroCanvasNew from '../IntroModel/IntroModelNew';
-import ParticlesComponent from '../particles';
+import IntroCanvasNew from '../../IntroModel/IntroModelNew';
+import ParticlesComponent from '../../particles';
 import KUTE from 'kute.js';
 
 function Main() {
@@ -43,7 +43,7 @@ function Main() {
         animation5.start();
     }, []);
     return (
-        <div id='main' style={{ position: 'relative' }} className='h-screen'>
+        <div id='main' style={{ position: 'relative' }} className='h-full'>
             <ParticlesComponent id='particles' />
             <section className='mt-[140px] w-full h-full main z-1'>
                 <div className='intro pt-[30px] ml-[5%] flex z-[10]'>
