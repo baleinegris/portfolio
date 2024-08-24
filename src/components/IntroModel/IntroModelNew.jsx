@@ -3,7 +3,7 @@ import { Canvas, useThree } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import { TimeProvider } from './TimeProvider';
 import * as THREE from 'three';
-
+import CanvasLoader from '../CanvasLoader';
 
 import { WhaleModel, PeeperModel, PenglingModel, TriopsModel, FeatherFishModel} from './ModelFactories/FishModels';
 
@@ -30,7 +30,7 @@ function IntroCanvasNew(){
         className='z-[0] absolute top-0'
         style={{position: 'absolute', height: '80%'}}>
             <TimeProvider>
-            <Suspense fallback={null}>
+            <Suspense fallback={<CanvasLoader/>}>
                 <ambientLight intensity={1} />
                 <spotLight position={[10, 10, 0]} angle={0.15} penumbra={1} />
                 <pointLight position={[-10, -10, -10]}/>

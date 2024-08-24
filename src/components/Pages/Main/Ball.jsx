@@ -1,19 +1,19 @@
 import React, { Suspense, useState } from 'react';
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls, Decal, Float, Preload, useTexture, Html } from '@react-three/drei';
+import { OrbitControls, Decal, Float, Preload, useTexture, Html, Loader } from '@react-three/drei';
+import CanvasLoader from '../../CanvasLoader';
 
-function Ball( { imgUrl, name } ){
+function Ball( { imgUrl, name, setHovered } ){
     const texture = useTexture(imgUrl);
     const [intensity, setIntensity] = useState(0.5);
-    const [hovered, setHovered] = useState(false);
 
     return (
-        // <Float 
-        //     speed={1.75}
-        //     floatIntensity={2}
-        //     rotationIntensity={1}>
+        <Float 
+            speed={1.75}
+            floatIntensity={0.5}
+            rotationIntensity={1.5}>
         <>
-                <ambientLight intensity={intensity/2}/>
+                <ambientLight intensity={0.5}/>
                 <directionalLight position={[0, 0, 0.05]} intensity={intensity}/>
                 <mesh castShadow receiveShadow
                     onPointerOver={() => {
@@ -34,30 +34,30 @@ function Ball( { imgUrl, name } ){
                 />
                 <Decal map={texture} position={[0,0,1]} rotation={[2*Math.PI, 0, 6.25]} flatShading/>
                 </mesh>
-                {hovered && (
-                <Html position={[0, 1.2, 0]} center>
-                    <div style={{ color: 'white', backgroundColor: 'rgb(0, 0, 0, 0.5)', padding: '2px 5px', borderRadius: '3px', width: 'fit-content', height: 'fit-content', pointerEvents: 'none'}}>
-                        {name}
-                    </div>
-                </Html>
-            )}
         </>
-        // </Float>
+        </Float>
     );
 }
 
 function BallCanvas({ imgUrl, name }){
+    const [hovered, setHovered] = useState(false);
+
     return (
+        <div className='flex flex-col items-center'>
         <Canvas
-            frameloop='demand'
+            shadows
+            frameloop='always'
             gl={{preserveDrawingBuffer : true}}
-            style={{width: '300px', height: '300px'}}
+            style={{width: '100px', height: '100px'}}
+            camera={{position: [0, 0, 2], fov: 50, zoom: 0.6}}
         >
-            <Suspense fallback={null}>
+            <Suspense fallback={<CanvasLoader/>}>
                 <OrbitControls enableZoom={false}/>
-                <Ball imgUrl={imgUrl} name={name}/>
+                <Ball imgUrl={imgUrl} name={name} setHovered={setHovered}/>
             </Suspense>
         </Canvas>
+        <div className={`ball-name ${hovered ? 'w-[100%] opacity-[100%]' : 'w-0 opacity-[0%]'}`}>{name}</div>
+        </div>
     );
 }
 export default BallCanvas;

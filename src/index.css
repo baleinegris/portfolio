@@ -215,6 +215,12 @@
   height: auto;
 }
 
+#separator-2{
+  width: 110%;
+  margin-left: -5%;
+  height: auto;
+}
+
 .intro-title{
   background: linear-gradient(to right, rgb(255, 255, 255, 0.2), transparent);
   border-radius: 10px;

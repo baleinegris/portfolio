@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import {fadeIn, textVariant} from "../../../assets/util/motion";
 import { technologies } from "../../../assets/constants";
 import BallCanvas from "./Ball";
+import KUTE from 'kute.js';
 
 function About() {
     return (
@@ -16,12 +17,15 @@ function About() {
                 for new opportunities to learn and grow. I have experience with full-stack web development and data science, and expertise in React.
             </div>
         </motion.div>
+        <div className="text-[30px] text-white font-bold pt-[50px] w-full h-full text-center">
+            Technical Skills:
+        </div>
         <div className='flex flex-row justify-center items-center flex-wrap'>
         {technologies.map((tech, index) =>
-        {
-            return <BallCanvas imgUrl={tech.icon} name={tech.name} />
-        }
-        )}
+            {
+                return <BallCanvas imgUrl={tech.icon} name={tech.name} />
+            }
+            )}
         </div>
         </div>
     )
