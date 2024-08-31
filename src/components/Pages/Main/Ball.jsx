@@ -51,10 +51,8 @@ function BallCanvas({ imgUrl, name }){
             style={{width: '100px', height: '100px'}}
             camera={{position: [0, 0, 2], fov: 50, zoom: 0.6}}
         >
-            <Suspense fallback={<CanvasLoader/>}>
                 <OrbitControls enableZoom={false}/>
                 <Ball imgUrl={imgUrl} name={name} setHovered={setHovered}/>
-            </Suspense>
         </Canvas>
         <div className={`ball-name ${hovered ? 'w-[100%] opacity-[100%]' : 'w-0 opacity-[0%]'}`}>{name}</div>
         </div>

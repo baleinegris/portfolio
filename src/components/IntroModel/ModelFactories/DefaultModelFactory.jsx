@@ -1,10 +1,9 @@
-import React, {useRef, useEffect, useState } from 'react'
+import React, {useRef, useEffect, useState, Suspense } from 'react'
 import { useLoader, useFrame } from '@react-three/fiber'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import { useAnimations } from '@react-three/drei';
 import { useTime } from '../TimeProvider';
-
-
+import WebsiteLoader from '../../WebsiteLoader';
 /**
  * Default Factory for a 3d model
  * @param path          str path to the gltf of the model from 3d folder

@@ -30,7 +30,6 @@ function IntroCanvasNew(){
         className='z-[0] absolute top-0'
         style={{position: 'absolute', height: '80%'}}>
             <TimeProvider>
-            <Suspense fallback={<CanvasLoader/>}>
                 <ambientLight intensity={1} />
                 <spotLight position={[10, 10, 0]} angle={0.15} penumbra={1} />
                 <pointLight position={[-10, -10, -10]}/>
@@ -43,7 +42,6 @@ function IntroCanvasNew(){
                 <axesHelper />
                 <gridHelper/> */}
                 <CameraSetup />
-            </Suspense>
             </TimeProvider>
         </Canvas>
     )
