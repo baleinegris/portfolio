@@ -43,6 +43,7 @@ function BottomSeparator() {
         animation5.start();
     }, []);
     return (
+        <>
         <svg id="separator-2" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" version="1.1">
             <g opacity={1}> 
                 <path id='blue-1-1-2'
@@ -79,6 +80,8 @@ function BottomSeparator() {
                     fill="#1881b6"></path>
             </g> 
         </svg>
+        <div className='bg-[#001146] h-[300px] w-full'/>
+        </>
     )
 };
 

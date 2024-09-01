@@ -13,6 +13,14 @@
   /* color-scheme: dark; */
 }
 
+#root{
+  overflow: hidden;
+}
+
+nav{
+  overflow-y: hidden;
+}
+
 .hash-span {
   margin-top: -100px;
   padding-bottom: 100px;
@@ -219,6 +227,7 @@
   width: 110%;
   margin-left: -5%;
   height: auto;
+  margin-bottom: -65%;
 }
 
 .intro-title{
