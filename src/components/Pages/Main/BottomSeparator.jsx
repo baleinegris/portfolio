@@ -1,47 +1,46 @@
 import React, { useEffect } from 'react'
 import KUTE from 'kute.js';
-
 function BottomSeparator() {
-    useEffect(() => {
-        const animation1 = KUTE.fromTo(
-            '#blue-1-1-2',
-            { path: '#blue-1-1-2' },
-            { path: '#blue-1-2-2' },
-            { repeat: 999, duration: 3000, yoyo: true }
-        );
-        animation1.start();
-        const animation2 = KUTE.fromTo(
-            '#blue-2-1-2',
-            { path: '#blue-2-1-2' },
-            { path: '#blue-2-2-2' },
-            { repeat: 999, duration: 3000, yoyo: true }
-        );
-        animation2.start();
+    // useEffect(() => {
+    //     const animation1 = KUTE.fromTo(
+    //         '#blue-1-1-2',
+    //         { path: '#blue-1-1-2' },
+    //         { path: '#blue-1-2-2' },
+    //         { repeat: 999, duration: 3000, yoyo: true }
+    //     );
+    //     animation1.start();
+    //     const animation2 = KUTE.fromTo(
+    //         '#blue-2-1-2',
+    //         { path: '#blue-2-1-2' },
+    //         { path: '#blue-2-2-2' },
+    //         { repeat: 999, duration: 3000, yoyo: true }
+    //     );
+    //     animation2.start();
 
-        const animation3 = KUTE.fromTo(
-            '#blue-3-1-2',
-            { path: '#blue-3-1-2' },
-            { path: '#blue-3-2-2' },
-            { repeat: 999, duration: 3000, yoyo: true }
-        );
-        animation3.start();
+    //     const animation3 = KUTE.fromTo(
+    //         '#blue-3-1-2',
+    //         { path: '#blue-3-1-2' },
+    //         { path: '#blue-3-2-2' },
+    //         { repeat: 999, duration: 3000, yoyo: true }
+    //     );
+    //     animation3.start();
 
-        const animation4 = KUTE.fromTo(
-            '#blue-4-1-2',
-            { path: '#blue-4-1-2' },
-            { path: '#blue-4-2-2' },
-            { repeat: 999, duration: 3000, yoyo: true }
-        );
-        animation4.start();
+    //     const animation4 = KUTE.fromTo(
+    //         '#blue-4-1-2',
+    //         { path: '#blue-4-1-2' },
+    //         { path: '#blue-4-2-2' },
+    //         { repeat: 999, duration: 3000, yoyo: true }
+    //     );
+    //     animation4.start();
 
-        const animation5 = KUTE.fromTo(
-            '#blue-5-1-2',
-            { path: '#blue-5-1-2' },
-            { path: '#blue-5-2-2' },
-            { repeat: 999, duration: 3000, yoyo: true }
-        );
-        animation5.start();
-    }, []);
+    //     const animation5 = KUTE.fromTo(
+    //         '#blue-5-1-2',
+    //         { path: '#blue-5-1-2' },
+    //         { path: '#blue-5-2-2' },
+    //         { repeat: 999, duration: 3000, yoyo: true }
+    //     );
+    //     animation5.start();
+    // }, []);
     return (
         <>
         <svg id="separator-2" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" version="1.1">
@@ -80,7 +79,7 @@ function BottomSeparator() {
                     fill="#1881b6"></path>
             </g> 
         </svg>
-        <div className='bg-[#001146] h-[300px] w-full'/>
+        <div className='h-[300px] w-full'/>
         </>
     )
 };

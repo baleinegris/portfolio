@@ -36,6 +36,9 @@ const Model = React.memo(({ path, animations, position, rotation, scale, speed }
     useFrame((state, delta) => {
         if (modelRef.current) {
             modelRef.current.position.z += speed * delta;
+            if (modelRef.current.position.z > 5) {
+                modelRef.current.position.z = -9;
+            }
         }
     });
 

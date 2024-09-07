@@ -5,7 +5,7 @@ const CanvasLoader = () => {
     const { progress } = useProgress();
     return (
         <Html>
-        <p className='text-white text-[30px]'>TEST %</p>
+        <p className='width-[200px] height-[200px] bg-red-700'>TEST %</p>
         </Html>
     )
 }

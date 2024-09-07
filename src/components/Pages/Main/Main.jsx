@@ -5,43 +5,43 @@ import ParticlesComponent from '../../particles';
 import KUTE from 'kute.js';
 
 function Main() {
-    useEffect(() => {
-        const animation1 = KUTE.fromTo(
-            '#blue-1-1',
-            { path: '#blue-1-1' },
-            { path: '#blue-1-2' },
-            { repeat: 999, duration: 3000, yoyo: true }
-        );
-        animation1.start();
-        const animation2 = KUTE.fromTo(
-            '#blue-2-1',
-            { path: '#blue-2-1' },
-            { path: '#blue-2-2' },
-            { repeat: 999, duration: 3000, yoyo: true }
-        );
-        animation2.start();
-        const animation3 = KUTE.fromTo(
-            '#blue-3-1',
-            { path: '#blue-3-1' },
-            { path: '#blue-3-2' },
-            { repeat: 999, duration: 3000, yoyo: true }
-        );
-        animation3.start();
-        const animation4 = KUTE.fromTo(
-            '#blue-4-1',
-            { path: '#blue-4-1' },
-            { path: '#blue-4-2' },
-            { repeat: 999, duration: 3000, yoyo: true }
-        );
-        animation4.start();
-        const animation5 = KUTE.fromTo(
-            '#blue-5-1',
-            { path: '#blue-5-1' },
-            { path: '#blue-5-2' },
-            { repeat: 999, duration: 3000, yoyo: true }
-        );
-        animation5.start();
-    }, []);
+    // useEffect(() => {
+    //     const animation1 = KUTE.fromTo(
+    //         '#blue-1-1',
+    //         { path: '#blue-1-1' },
+    //         { path: '#blue-1-2' },
+    //         { repeat: 999, duration: 3000, yoyo: true }
+    //     );
+    //     animation1.start();
+    //     const animation2 = KUTE.fromTo(
+    //         '#blue-2-1',
+    //         { path: '#blue-2-1' },
+    //         { path: '#blue-2-2' },
+    //         { repeat: 999, duration: 3000, yoyo: true }
+    //     );
+    //     animation2.start();
+    //     const animation3 = KUTE.fromTo(
+    //         '#blue-3-1',
+    //         { path: '#blue-3-1' },
+    //         { path: '#blue-3-2' },
+    //         { repeat: 999, duration: 3000, yoyo: true }
+    //     );
+    //     animation3.start();
+    //     const animation4 = KUTE.fromTo(
+    //         '#blue-4-1',
+    //         { path: '#blue-4-1' },
+    //         { path: '#blue-4-2' },
+    //         { repeat: 999, duration: 3000, yoyo: true }
+    //     );
+    //     animation4.start();
+    //     const animation5 = KUTE.fromTo(
+    //         '#blue-5-1',
+    //         { path: '#blue-5-1' },
+    //         { path: '#blue-5-2' },
+    //         { repeat: 999, duration: 3000, yoyo: true }
+    //     );
+    //     animation5.start();
+    // }, []);
     return (
         <div id='main' style={{ position: 'relative' }} className='h-full'>
             <ParticlesComponent id='particles' />
