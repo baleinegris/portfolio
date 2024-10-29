@@ -4,6 +4,7 @@ import ripplePic from "./ripplePic.png"
 import scrabblePic from "./scrabblePic.png"
 import josephPic from "./josephPic.png"
 import baleinegrisPic from "./baleinegrisPic.png"
+import floodFillPic from "./flood-fill-img.png"
 
 export const technologies = [
     {
@@ -61,6 +62,13 @@ export const technologies = [
 ]
 
 export const projects = [
+    {
+        name: "Flood Fill",
+        img: floodFillPic,
+        description: "Web App that uses a custom trained Neural Net to make predictions on flood risks for users to invest confidently. 2nd Place Winner of NewHacks 2024.",
+        link: "https://devpost.com/software/flood-fill",
+        technologies: ["React", "Tailwind", "Python"],
+    },
     {
         name: "Portfolio",
         img: portfolioPic,

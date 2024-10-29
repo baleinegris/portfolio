@@ -63,8 +63,8 @@ function IntroCanvasNew(){
                     <PenglingModel scale={0.05} position={[1.4, -0.4, -5]} speed={0.6}/>
                     <TriopsModel scale={20} position={[0.2, 0, -5]} speed={0.5}/>
                     <FeatherFishModel scale={20} position={[-0.2, 0, -5]} speed={0.5}/> */}
-                    {/* <OrbitControls/>
-                    <axesHelper />
+                    {/* <OrbitControls/> */}
+                    {/* <axesHelper />
                     <gridHelper/> */}
                     <CameraSetup />
                 </TimeProvider>
