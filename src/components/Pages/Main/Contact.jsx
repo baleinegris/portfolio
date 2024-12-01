@@ -60,7 +60,7 @@ function Contact() {
             setLoading(false);
             alert('Message sent successfully!');
             setForm({
-                name: '',
+                from_name: '',
                 email: '',
                 message: ''
             });
