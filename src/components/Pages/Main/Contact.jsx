@@ -8,7 +8,7 @@ function Contact() {
     const contactRef = useContext(ContactContext);
     const formRef = useRef(null);
     const [ form, setForm ] = useState({
-        name: '',
+        from_name: '',
         email: '',
         message: ''
     }); 

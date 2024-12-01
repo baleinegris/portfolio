@@ -53,7 +53,7 @@ function Main() {
                     </div>
                     <div className='text-[30px] ml-3 mt-3 text-white font-bold  w-[40%] intro-text'>
                         <span className='intro-title'>Hi, I'm <span className='text-cyan-400'>Oscar Heath</span></span> <br />
-                        <span className='text-blue-300 font-normal'>Aspiring Software Developer studying Computer Science at the University of Toronto </span>
+                        <span className='text-blue-300 font-normal'>Aspiring Software Developer studying Computer Science at the University of Toronto</span>
                     </div>
                 </div>
                 <IntroCanvasNew />
