@@ -59,6 +59,10 @@ export const technologies = [
     {
         name: "Tailwind",
         icon: "tailwind.png",
+    },
+    {
+        name: "C",
+        icon: "C.png",
     }
 ]
 
