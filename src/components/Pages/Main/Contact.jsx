@@ -47,7 +47,7 @@ function Contact() {
 
     function handleSubmit(e) {
         let params = {
-            from_name: form.name,
+            from_name: form.from_name,
             to_name: 'Oscar Heath',
             from_email: form.email,
             to_email: 'oscar.w.heath@gmail.com',
@@ -85,7 +85,7 @@ function Contact() {
                 <form onSubmit={handleSubmit} ref={formRef}>
                     <input type="text" placeholder="Your name"
                     name="from_name"
-                    value={form.name}
+                    value={form.from_name}
                     onChange={handleChange}
                     className="w-full h-10 bg-purple-950 text-white p-2 outline-none my-2 rounded-lg"/>
                     <input type="text" placeholder="Your email" 

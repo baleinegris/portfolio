@@ -5,6 +5,7 @@ import scrabblePic from "./scrabblePic.png"
 import josephPic from "./josephPic.png"
 import baleinegrisPic from "./baleinegrisPic.png"
 import floodFillPic from "./flood-fill-img.png"
+import integralParser from "./integral-parser-pic.png"
 
 export const technologies = [
     {
@@ -70,6 +71,13 @@ export const projects = [
         technologies: ["React", "Tailwind", "Python"],
     },
     {
+        name: "Integral Parser",
+        img: integralParser,
+        description: "Chrome Extension that parses raw images of integrals using OpenAI GPT-4o mini and generates a link to the Wolfram Alpha page of this integral.",
+        link: "https://github.com/baleinegris/Integral-Parser-Extension",
+        technologies: ["React", "OpenAI"],
+    },
+    {
         name: "Portfolio",
         img: portfolioPic,
         description: "This website! Built with React, Tailwind CSS, and Three.js.",
@@ -122,4 +130,5 @@ export const technologyColors = {
     "Firebase": "bg-gradient-to-r from-orange-500 to-yellow-300 bg-clip-text text-transparent",
     "Three.js": "bg-gradient-to-r to-black from-slate-900 bg-clip-text text-transparent",
     "Tailwind": "bg-cyan-300 bg-clip-text text-transparent",
+    "OpenAI": "bg-gradient-to-r from-green-500 to-white bg-clip-text text-transparent",
 }
