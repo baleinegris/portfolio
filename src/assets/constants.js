@@ -53,16 +53,16 @@ export const technologies = [
         icon: "firebase.png",
     },
     {
-        name: "Three.js",
-        icon: "threejs.svg",
-    },
-    {
         name: "Tailwind",
         icon: "tailwind.png",
     },
     {
         name: "C",
         icon: "C.png",
+    },
+    {
+        name: "PyTorch",
+        icon: "pytorch.png",
     }
 ]
 
