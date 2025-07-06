@@ -11,7 +11,7 @@ import Contact from './components/Pages/Main/Contact';
 {/* <WebsiteLoader /> */}
 function App() {
   return (
-    <BrowserRouter basename='/portfolio/'>
+    <BrowserRouter basename='/'>
       <ProjectsProvider>
         <ContactProvider>
           <Navbar />
